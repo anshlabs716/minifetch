@@ -18,10 +18,6 @@ Available in both **Bash** and **C** for maximum speed and minimal resource usag
 
 ---
 
-## 🛠️ Prerequisites (Installing GCC)
-
-Before compiling the C version, make sure you have a C compiler (`gcc` or `clang`) installed.
-
 ### On Linux (Ubuntu / Debian / Mint):
 ```bash
 sudo apt update && sudo apt install build-essential -y
@@ -36,30 +32,36 @@ Bash
 pkg update && pkg install clang gcc make -y
 📦 Installation & Usage
 Option 1: The C Version (minifetch.c) – Recommended for speed
-Clone the repository
+Clone the repository:
 
 Bash
-git clone [https://github.com/anshlabs716/minifetch.git](https://github.com/anshlabs716/minifetch.git)
+git clone https://github.com/anshlabs716/minifetch.git
+Navigate to the folder:
+
+Bash
 cd minifetch
-Compile the C source
+Compile the C source:
 
 Bash
 gcc minifetch.c -o minifetch
-Run it
+Run it:
 
 Bash
 ./minifetch
 Option 2: The Bash Script (minifetch.sh)
-Clone the repository (if you haven't already)
+Clone the repository:
 
 Bash
-git clone [https://github.com/anshlabs716/minifetch.git](https://github.com/anshlabs716/minifetch.git)
+git clone https://github.com/anshlabs716/minifetch.git
+Navigate to the folder:
+
+Bash
 cd minifetch
-Make it executable
+Make it executable:
 
 Bash
 chmod +x minifetch.sh
-Run it
+Run it:
 
 Bash
 ./minifetch.sh
@@ -67,12 +69,24 @@ Bash
 On Linux (with sudo):
 Bash
 gcc minifetch.c -o minifetch
+Bash
 sudo mv minifetch /usr/local/bin/minifetch
-Now you can run it from anywhere by simply typing minifetch.
+Now you can run it from anywhere by simply typing:
 
+Bash
+minifetch
 On Termux (no root):
 Bash
 gcc minifetch.c -o $PREFIX/bin/minifetch
+After that, simply type minifetch in any Termux session:
+
+Bash
+minifetch
+## 🛠️ Prerequisites (Installing GCC)
+
+Before compiling the C version, make sure you have a C compiler (`gcc` or `clang`) installed.
+
+
 After that, simply type minifetch in any Termux session.
 
 🖥️ Usage
