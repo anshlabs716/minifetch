@@ -145,8 +145,8 @@ It will:
   /   |  |  -\  CPU:    Intel N150 (4) @ 3.600GHz
  /_-''    ''-_\ RAM:    3463MiB / 7423MiB
                   ██  ██  ██  ██  ██  ██  ██
+#my real specs btw
 ```
-
 ---
 
 ## 🛠️ Customization
