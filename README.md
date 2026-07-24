@@ -178,7 +178,3 @@ If you like `minifetch`, give the repository a star on GitHub!
 ---
 
 Made with ❤️ by [anshlabs716](https://github.com/anshlabs716)
-
-
-
-Gemini is AI and can make mistakes.
