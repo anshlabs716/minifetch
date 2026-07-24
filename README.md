@@ -1,4 +1,3 @@
-
 # minifetch
 
 `minifetch` is a lightweight, terminal‑based system information tool inspired by [neofetch](https://github.com/dylanaraps/neofetch).
@@ -93,12 +92,13 @@ Example Output
 Plaintext
        /\       user@host
       /  \      -------------------
-     /\   \     OS:     Ubuntu 22.04
-    /      \    Kernel: 5.15.0-91-generic (x86_64)
-   /   ,,   \   Uptime: up 2 hours
-  /   |  |  -\  CPU:    Intel Core i7-8700K
- /_-''    ''-_\ RAM:    2048 MiB / 16000 MiB
+     /\   \     OS:      OS: Arch Linux x86_64 
+    /      \    Kernel: 7.1.4-arch1-1
+   /   ,,   \   Uptime: 11 hours, 42 mins 
+  /   |  |  -\  CPU:    Intel N150 (4) @ 3.600GHz 
+ /_-''    ''-_\ RAM:    3463MiB / 7423MiB 
                   ██  ██  ██  ██  ██  ██  ██
+#those are my own specs
 🛠️ Customization
 You can tweak the code directly:
 
@@ -118,4 +118,3 @@ Pull requests and issues are welcome! If you have a new distro logo or a bug fix
 If you like minifetch, give the repository a star on GitHub!
 
 Made with ❤️ by anshlabs716.
-
