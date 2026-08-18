@@ -1,142 +1,227 @@
-# minifetch
+# 🖥️ minifetch
 
-`minifetch` is a lightweight, terminal‑based system information tool inspired by [neofetch](https://github.com/dylanaraps/neofetch).
+<div align="center">
 
-It displays your OS, kernel, uptime, CPU, RAM, and a colourful ASCII logo – all in a compact format.
+### ⚡ A Tiny System Information Tool
 
-Available in both **Bash** and **C** for maximum speed and minimal resource usage! Perfect for **Termux on Android**, Linux desktops, or any system with a terminal.
+**Like neofetch, but smaller, simpler, and built with Termux in mind.**
+
+[![C](https://img.shields.io/badge/C-62.4%25-A8B9CC?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Shell](https://img.shields.io/badge/Shell-37.6%25-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Android%20%7C%20Termux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://termux.dev/)
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.html)
+
+</div>
+
+---
+
+## 📖 About
+
+**minifetch** is a lightweight, terminal-based system information tool inspired by [**neofetch**](https://github.com/dylanaraps/neofetch) and [**fastfetch**](https://github.com/fastfetch-cli/fastfetch).
+
+It displays essential system information alongside colorful ASCII artwork while keeping the implementation small and simple.
+
+The project is available in both **C** and **Bash**, making it useful across Linux desktops, Android/Termux, and other Unix-like environments.
+
+> 🪶 **The idea:** take the useful parts of a system fetch tool and keep them compact.
 
 ---
 
 ## ✨ Features
 
-- **Blazing fast & lightweight** – available as a single Bash script or compiled C binary.
-- **Colourful output** with ANSI escape codes.
-- **Distro‑specific ASCII art** – automatically detects Arch, Ubuntu, Debian, Fedora, Mint, Pop!_OS, and Android/Termux.
-- **Press Enter to close** – after displaying info, just hit **Enter** and the terminal window closes (great for launchers or quick glances).
-- **Works on Termux** out of the box.
+- ⚡ Lightweight system information display
+- 💙 C implementation
+- 🐚 Bash implementation
+- 🎨 ANSI-colored terminal output
+- 🐧 Automatic distribution detection
+- 🤖 Android / Termux detection
+- 🖼️ Distribution-specific ASCII artwork
+- 💻 OS information
+- 🧠 Kernel information
+- ⏱️ System uptime
+- 🔧 CPU information
+- 🧮 RAM usage
+- 📱 Termux-friendly
+- 🪶 Minimal dependencies
 
 ---
 
-## 🛠️ Prerequisites (Installing GCC)
+## 🖥️ Supported Environments
 
-Before compiling the C version, make sure you have a C compiler (`gcc` or `clang`) installed.
-
-### On Linux (Ubuntu / Debian / Mint):
-```bash
-sudo apt update && sudo apt install build-essential -y
-```
-
-### On Arch Linux / EndeavourOS:
-```bash
-sudo pacman -Sy base-devel gcc --noconfirm
-```
-
-### On Fedora:
-```bash
-sudo dnf install gcc -y
-```
-
-### On Termux (Android):
-```bash
-pkg update && pkg install clang gcc make -y
-```
+| Environment | Support |
+|---|---|
+| 🐧 Linux | ✅ Supported |
+| 📱 Android / Termux | ✅ Supported |
+| 🖥️ Linux desktops | ✅ Supported |
+| 🍎 macOS | ⚠️ Not specifically tested |
+| 😈 BSD | ⚠️ Not specifically tested |
+| 🪟 Windows | ❌ Not currently supported |
 
 ---
 
-## 📦 Installation & Usage
+## 🎨 Distro Detection
 
-### Option 1: The C Version (`minifetch.c`) – *Recommended for speed*
+`minifetch` can detect and display artwork for several distributions and environments, including:
 
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/anshlabs716/minifetch.git](https://github.com/anshlabs716/minifetch.git)
-```
+- 🏹 Arch Linux
+- 🟠 Ubuntu
+- 🌀 Debian
+- 🔵 Fedora
+- 🟢 Linux Mint
+- 🟣 Pop!_OS
+- 🤖 Android / Termux
 
-2. **Navigate to the folder:**
-```bash
+More distributions can be added by extending the detection and ASCII-art logic.
+
+---
+
+## 🧰 Implementations
+
+### 💙 C
+
+`minifetch.c` is the compiled implementation and is recommended when you want a small native executable.
+
+### 🐚 Bash
+
+`minifetch.sh` provides the same general concept as a shell script without requiring compilation.
+
+---
+
+## 📦 Requirements
+
+### C Version
+
+You need a C compiler such as:
+
+- `gcc`
+- `clang`
+
+### Bash Version
+
+You need:
+
+- Bash
+- Standard Unix/Linux utilities used by the script
+
+### Termux
+
+For the C version, Termux build tools are required.
+
+---
+
+## 🚀 Installation
+
+### Clone the Repository
+
+~~~~bash
+git clone https://github.com/anshlabs716/minifetch.git
 cd minifetch
-```
+~~~~
 
-3. **Compile the C source:**
-```bash
+### C Version
+
+Compile:
+
+~~~~bash
 gcc minifetch.c -o minifetch
-```
+~~~~
 
-4. **Run it:**
-```bash
+Run:
+
+~~~~bash
 ./minifetch
-```
+~~~~
 
----
+### Bash Version
 
-### Option 2: The Bash Script (`minifetch.sh`)
+Make the script executable:
 
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/anshlabs716/minifetch.git](https://github.com/anshlabs716/minifetch.git)
-```
-
-2. **Navigate to the folder:**
-```bash
-cd minifetch
-```
-
-3. **Make it executable:**
-```bash
+~~~~bash
 chmod +x minifetch.sh
-```
+~~~~
 
-4. **Run it:**
-```bash
+Run:
+
+~~~~bash
 ./minifetch.sh
-```
+~~~~
 
 ---
 
-## 🚀 Optional: Install System‑Wide
+## 📱 Termux
 
-### On Linux (with sudo):
-```bash
+`minifetch` is designed to work well with **Termux on Android**.
+
+Install the required build tools:
+
+~~~~bash
+pkg update
+pkg install clang gcc make
+~~~~
+
+Compile the C version:
+
+~~~~bash
 gcc minifetch.c -o minifetch
-sudo mv minifetch /usr/local/bin/minifetch
-```
+~~~~
 
-Now you can run it from anywhere by simply typing:
-```bash
-minifetch
-```
+Run:
+
+~~~~bash
+./minifetch
+~~~~
 
 ---
 
-### On Termux (no root):
-```bash
-gcc minifetch.c -o $PREFIX/bin/minifetch
-```
+## 🌍 Optional System-Wide Installation
 
-After that, simply type `minifetch` in any Termux session:
-```bash
+### Linux
+
+Compile:
+
+~~~~bash
+gcc minifetch.c -o minifetch
+~~~~
+
+Install:
+
+~~~~bash
+sudo mv minifetch /usr/local/bin/minifetch
+~~~~
+
+Then run:
+
+~~~~bash
 minifetch
-```
+~~~~
+
+### Termux
+
+Compile directly into the Termux executable directory:
+
+~~~~bash
+gcc minifetch.c -o $PREFIX/bin/minifetch
+~~~~
+
+Then simply run:
+
+~~~~bash
+minifetch
+~~~~
 
 ---
 
 ## 🖥️ Usage
 
-Just run the command:
+Run:
 
-```bash
+~~~~bash
 minifetch
-```
-
-It will:
-- Show system information.
-- Wait for you to press **Enter**.
-- **Close the terminal window** (if run from a terminal emulator that supports this – most do).
+~~~~
 
 ### Example Output
 
-```text
+~~~~text
        /\       user@host
       /  \      -------------------
      /\   \     OS:     Arch Linux x86_64
@@ -145,36 +230,128 @@ It will:
   /   |  |  -\  CPU:    Intel N150 (4) @ 3.600GHz
  /_-''    ''-_\ RAM:    3463MiB / 7423MiB
                   ██  ██  ██  ██  ██  ██  ██
-#my real specs btw
-```
----
+~~~~
 
-## 🛠️ Customization
-
-You can tweak the code directly:
-
-- **Change colours** – edit the `C_*` color macros/variables at the top.
-- **Add more distros** – extend the logic in the ASCII art sections.
-- **Remove the "Press Enter" prompt** – clean up the exit/read lines at the end if you prefer an instant exit.
+> 💻 **Real hardware specs BTW.**
 
 ---
 
-## 📄 License
+## ⌨️ Terminal Behavior
 
-This project is licensed under the **GPL‑3.0** – see the [LICENSE](LICENSE) file for details.
+The current implementation waits for **Enter** after displaying the system information.
+
+This can be useful for quick-glance launcher setups where the terminal window should close afterward.
+
+Behavior may vary depending on the terminal emulator being used.
+
+---
+
+## 🎨 Customization
+
+`minifetch` is intentionally easy to modify.
+
+### 🌈 Colors
+
+Edit the color definitions or macros in the source code.
+
+### 🖼️ ASCII Art
+
+Add or modify distribution-specific ASCII artwork.
+
+### 🐧 Distribution Detection
+
+Extend the detection logic to support additional distributions and environments.
+
+### ⚡ Exit Behavior
+
+The Enter-to-close behavior can be changed if you prefer the program to exit immediately.
+
+---
+
+## 📁 Project Structure
+
+~~~~text
+minifetch/
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── minifetch.c
+└── minifetch.sh
+~~~~
+
+---
+
+## 🛠️ Technical Stack
+
+- 💙 C
+- 🐚 Bash
+- 🎨 ANSI escape sequences
+- 🐧 Linux system information
+- 📱 Android / Termux support
+
+---
+
+## 🚧 Development Status
+
+**minifetch is an active personal project and may continue to evolve.**
+
+Planned improvements include:
+
+- [ ] More distribution logos
+- [ ] More system information
+- [ ] Better platform detection
+- [ ] Additional terminal customization
+- [ ] More accurate hardware detection
+- [ ] Improved portability
+- [ ] Performance testing
+- [ ] More Termux-specific features
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests and issues are welcome! If you have a new distro logo or a bug fix, feel free to open a PR.
+Pull requests, bug reports, ideas, and improvements are welcome.
+
+Especially useful:
+
+- 🐧 Linux testing
+- 📱 Termux testing
+- 🎨 New distro artwork
+- 💻 C improvements
+- 🐚 Shell improvements
+- 🛠️ Portability fixes
+- 📚 Documentation
 
 ---
 
-## ⭐ Support
+## 🔒 Security
 
-If you like `minifetch`, give the repository a star on GitHub!
+If you discover a security issue or unexpected behavior, please report it responsibly through the repository's security policy.
+
+See [`SECURITY.md`](SECURITY.md).
 
 ---
 
-Made with ❤️ by [anshlabs716](https://github.com/anshlabs716)
+## 📜 License
+
+This project is licensed under the **GNU General Public License v3.0**.
+
+See [`LICENSE`](LICENSE) for the full license text.
+
+---
+
+## 👤 Author
+
+Made by **AnshLabs716** 🔥
+
+---
+
+<div align="center">
+
+### ⚡ minifetch
+
+**Like neofetch. Just mini.**
+
+**C • Bash • Linux • Termux**
+
+</div>
