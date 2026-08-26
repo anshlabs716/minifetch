@@ -225,7 +225,7 @@ minifetch
        /\       user@host
       /  \      -------------------
      /\   \     OS:     Arch Linux x86_64
-    /      \    Kernel: 7.1.4-arch1-1
+    /      \    Kernel: 7.1.9-arch1-1
    /   ,,   \   Uptime: 11 hours, 42 mins
   /   |  |  -\  CPU:    Intel N150 (4) @ 3.600GHz
  /_-''    ''-_\ RAM:    3463MiB / 7423MiB
