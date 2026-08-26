@@ -302,7 +302,7 @@ Planned improvements include:
 - [ ] Better platform detection
 - [ ] Additional terminal customization
 - [ ] More accurate hardware detection
-- [ ] Improved portability
+- [x] Improved portability
 - [ ] Performance testing
 - [ ] More Termux-specific features
 
