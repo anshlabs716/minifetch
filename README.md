@@ -15,6 +15,44 @@
 
 ---
 
+## 📑 Table of Contents
+
+  - [⚡ A Tiny System Information Tool](#-a-tiny-system-information-tool)
+- [📖 About](#-about)
+- [✨ Features](#-features)
+- [🖥️ Supported Environments](#-supported-environments)
+- [🎨 Distro Detection](#-distro-detection)
+- [🧰 Implementations](#-implementations)
+  - [💙 C](#-c)
+  - [🐚 Bash](#-bash)
+- [📦 Requirements](#-requirements)
+  - [C Version](#c-version)
+  - [Bash Version](#bash-version)
+  - [Termux](#termux)
+- [🚀 Installation](#-installation)
+  - [Clone the Repository](#clone-the-repository)
+  - [C Version](#c-version)
+  - [Bash Version](#bash-version)
+- [📱 Termux](#-termux)
+- [🌍 Optional System-Wide Installation](#-optional-system-wide-installation)
+  - [Linux](#linux)
+  - [Termux](#termux)
+- [🖥️ Usage](#-usage)
+  - [Example Output](#example-output)
+- [⌨️ Terminal Behavior](#-terminal-behavior)
+- [🎨 Customization](#-customization)
+  - [🌈 Colors](#-colors)
+  - [🖼️ ASCII Art](#-ascii-art)
+  - [🐧 Distribution Detection](#-distribution-detection)
+  - [⚡ Exit Behavior](#-exit-behavior)
+- [📁 Project Structure](#-project-structure)
+- [🛠️ Technical Stack](#-technical-stack)
+- [🚧 Development Status](#-development-status)
+- [🤝 Contributing](#-contributing)
+- [🔒 Security](#-security)
+- [📜 License](#-license)
+- [👤 Author](#-author)
+
 ## 📖 About
 
 **minifetch** is a lightweight, terminal-based system information tool inspired by [**neofetch**](https://github.com/dylanaraps/neofetch) and [**fastfetch**](https://github.com/fastfetch-cli/fastfetch).
