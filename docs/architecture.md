@@ -2,8 +2,6 @@
 
 High-level structure of minifetch.
 
-# Architecture
-
 This page describes the high-level structure of minifetch. It is a starting
 point and is updated as the implementation evolves.
 
@@ -13,8 +11,8 @@ minifetch
 
 ## Main components
 
-- `**C standard library**`
-- `**Bash + coreutils**`
+- **C standard library**
+- **Bash + coreutils**
 
 ## Data flow
 

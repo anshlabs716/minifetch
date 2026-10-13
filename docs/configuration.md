@@ -2,8 +2,6 @@
 
 How to configure minifetch.
 
-# Configuration
-
 Reference for configuring minifetch.
 
 ## Where configuration lives

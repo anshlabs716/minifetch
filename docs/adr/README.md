@@ -2,8 +2,6 @@
 
 Architecture decision records for minifetch.
 
-# Architecture Decision Records
-
 This directory records significant architecture decisions for minifetch.
 
 ## What is an ADR?
