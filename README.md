@@ -306,7 +306,33 @@ The Enter-to-close behavior can be changed if you prefer the program to exit imm
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Files
+
+```text
+minifetch/
+├── .clang-format
+├── .editorconfig
+├── .gitattributes
+├── .github/
+├── .gitignore
+├── .markdownlint-cli2.jsonc
+├── .shellcheckrc
+├── CHANGELOG.md
+├── CITATION.cff
+├── CODE_OF_CONDUCT.md
+├── COMPATIBILITY.md
+├── CONTRIBUTING.md
+├── docs/
+├── LICENSE
+├── Makefile
+├── minifetch.c
+├── minifetch.sh
+├── README.md
+├── SECURITY.md
+├── SUPPORT.md
+├── THIRD_PARTY_NOTICES.md
+```
+
 
 ~~~~text
 minifetch/
