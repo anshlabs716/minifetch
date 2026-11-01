@@ -396,6 +396,35 @@ See [`SECURITY.md`](SECURITY.md).
 
 ---
 
+## 📁 Project Files
+
+```text
+minifetch/
+├── .clang-format
+├── .editorconfig
+├── .gitattributes
+├── .github/
+├── .gitignore
+├── .markdownlint-cli2.jsonc
+├── .shellcheckrc
+├── CHANGELOG.md
+├── CITATION.cff
+├── CODE_OF_CONDUCT.md
+├── COMPATIBILITY.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── Makefile
+├── README.md
+├── SECURITY.md
+├── SUPPORT.md
+├── THIRD_PARTY_NOTICES.md
+├── docs/
+├── minifetch.c
+└── minifetch.sh
+```
+
+---
+
 ## 📜 License
 
 This project is licensed under the **GNU General Public License v3.0**.
