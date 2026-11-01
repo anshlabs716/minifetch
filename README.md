@@ -365,6 +365,24 @@ minifetch/
 ├── .editorconfig
 ├── .gitattributes
 ├── .github/
+│   ├── CODEOWNERS
+│   ├── CONTRIBUTING.md
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml
+│   │   ├── config.yml
+│   │   ├── feature_request.yml
+│   │   └── question.yml
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── release.yml
+│   └── workflows/
+│       ├── c-build.yml
+│       ├── c-cpp.yml
+│       ├── ci.yml
+│       ├── links.yml
+│       ├── markdown-lint.yml
+│       ├── release.yml
+│       ├── security.yml
+│       └── shell-checks.yml
 ├── .gitignore
 ├── .markdownlint-cli2.jsonc
 ├── .shellcheckrc
@@ -373,15 +391,30 @@ minifetch/
 ├── CODE_OF_CONDUCT.md
 ├── COMPATIBILITY.md
 ├── CONTRIBUTING.md
+├── docs/
+│   ├── adr/
+│   │   └── README.md
+│   ├── architecture.md
+│   ├── building.md
+│   ├── configuration.md
+│   ├── development.md
+│   ├── faq.md
+│   ├── index.md
+│   ├── installation.md
+│   ├── releasing.md
+│   ├── supported-platforms.md
+│   ├── testing.md
+│   ├── third-party-dependencies.md
+│   ├── troubleshooting.md
+│   └── usage.md
 ├── LICENSE
 ├── Makefile
+├── minifetch.c
+├── minifetch.sh
 ├── README.md
 ├── SECURITY.md
 ├── SUPPORT.md
-├── THIRD_PARTY_NOTICES.md
-├── docs/
-├── minifetch.c
-└── minifetch.sh
+└── THIRD_PARTY_NOTICES.md
 ```
 
 ---
